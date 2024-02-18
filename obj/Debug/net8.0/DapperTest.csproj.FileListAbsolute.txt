@@ -37,3 +37,6 @@ C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\obj\Debug\net8.0\refint
 C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\obj\Debug\net8.0\DapperTest.pdb
 C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\obj\Debug\net8.0\DapperTest.genruntimeconfig.cache
 C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\obj\Debug\net8.0\ref\DapperTest.dll
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\obj\Debug\net8.0\DapperTest.sourcelink.json
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\DapperTest.xml
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\obj\Debug\net8.0\DapperTest.xml
