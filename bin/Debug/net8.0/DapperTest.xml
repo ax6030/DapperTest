@@ -4,7 +4,7 @@
         <name>DapperTest</name>
     </assembly>
     <members>
-        <member name="M:DapperTest.Controllers.CardController.GetList">
+        <member name="M:DapperTest.Controllers.CardController.GetList(DapperTest.Parameter.CardSearchParameter)">
             <summary>
             查詢卡片列表
             </summary>
@@ -42,36 +42,6 @@
             <param name="id">卡片編號</param>
             <returns></returns>
         </member>
-        <member name="P:DapperTest.Models.Card.Id">
-            <summary>
-            卡片編號
-            </summary>
-        </member>
-        <member name="P:DapperTest.Models.Card.Name">
-            <summary>
-            卡片名稱
-            </summary>
-        </member>
-        <member name="P:DapperTest.Models.Card.Description">
-            <summary>
-            卡片描述
-            </summary>
-        </member>
-        <member name="P:DapperTest.Models.Card.Attack">
-            <summary>
-            攻擊力
-            </summary>
-        </member>
-        <member name="P:DapperTest.Models.Card.Health">
-            <summary>
-            血量
-            </summary>
-        </member>
-        <member name="P:DapperTest.Models.Card.Cost">
-            <summary>
-            花費
-            </summary>
-        </member>
         <member name="P:DapperTest.Models.CardParameter.Name">
             <summary>
             卡片名稱
@@ -97,8 +67,70 @@
             花費
             </summary>
         </member>
-        <member name="M:DapperTest.Repository.CardRepository.Get(System.Int32)">
-            查詢卡片
+        <member name="P:DapperTest.Models.CardViewModel.Id">
+            <summary>
+            卡片編號
+            </summary>
+        </member>
+        <member name="P:DapperTest.Models.CardViewModel.Name">
+            <summary>
+            卡片名稱
+            </summary>
+        </member>
+        <member name="P:DapperTest.Models.CardViewModel.Description">
+            <summary>
+            卡片描述
+            </summary>
+        </member>
+        <member name="P:DapperTest.Models.CardViewModel.Attack">
+            <summary>
+            攻擊力
+            </summary>
+        </member>
+        <member name="P:DapperTest.Models.CardViewModel.Health">
+            <summary>
+            血量
+            </summary>
+        </member>
+        <member name="P:DapperTest.Models.CardViewModel.Cost">
+            <summary>
+            花費
+            </summary>
+        </member>
+        <member name="P:DapperTest.Parameter.CardSearchParameter.Name">
+            <summary>
+            卡片名稱
+            </summary>
+        </member>
+        <member name="P:DapperTest.Parameter.CardSearchParameter.MinAttack">
+            <summary>
+            攻擊力下限
+            </summary>
+        </member>
+        <member name="P:DapperTest.Parameter.CardSearchParameter.MaxAttack">
+            <summary>
+            攻擊力上限
+            </summary>
+        </member>
+        <member name="P:DapperTest.Parameter.CardSearchParameter.MinHealth">
+            <summary>
+            血量下限
+            </summary>
+        </member>
+        <member name="P:DapperTest.Parameter.CardSearchParameter.MaxHealth">
+            <summary>
+            血量上限
+            </summary>
+        </member>
+        <member name="P:DapperTest.Parameter.CardSearchParameter.MinCost">
+            <summary>
+            花費值下限
+            </summary>
+        </member>
+        <member name="P:DapperTest.Parameter.CardSearchParameter.MaxCost">
+            <summary>
+            花費值上限
+            </summary>
         </member>
     </members>
 </doc>

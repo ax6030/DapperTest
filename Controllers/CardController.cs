@@ -1,5 +1,9 @@
-﻿using DapperTest.Models;
-using DapperTest.Repository;
+﻿using AutoMapper;
+using DapperTest.Models;
+using DapperTest.Parameter;
+using DapperTest.Service.Dtos;
+using DapperTest.Service.Implement;
+using DapperTest.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -10,10 +14,12 @@ namespace DapperTest.Controllers
     [ApiController]
     public class CardController : ControllerBase
     {
-        private readonly CardRepository _cardRepository;
-        public CardController(CardRepository cardRepository)
+        private readonly IMapper _mapper;
+        private readonly ICardService _cardService;
+        public CardController(CardService cardService, IMapper mapper)
         {
-            _cardRepository = cardRepository;
+            _cardService = cardService;
+            _mapper = mapper;
         }
 
 
@@ -23,9 +29,14 @@ namespace DapperTest.Controllers
         /// <returns></returns>
         [HttpGet]
         [Produces(contentType: "application/json")]
-        public IEnumerable<Card> GetList()
+        public IEnumerable<CardViewModel> GetList([FromQuery]CardSearchParameter parameter)
         {
-            return _cardRepository.GetList();
+            var info = _mapper.Map<CardSearchInfo>(parameter);
+
+            var cards = _cardService.GetList(info);
+
+            var result = _mapper.Map<IEnumerable<CardViewModel>>(cards);
+            return result;
         }
 
 
@@ -40,10 +51,13 @@ namespace DapperTest.Controllers
         // GET: api/<CardController>
         [HttpGet("{id}")]
         [Produces(contentType: "application/json")]
-        [ProducesResponseType(typeof(Card), 200)]
-        public Card Get([FromRoute] int id)
+        [ProducesResponseType(typeof(CardViewModel), 200)]
+        public CardViewModel Get([FromRoute] int id)
         {
-            var result = _cardRepository.Get(id);
+            var card = _cardService.Get(id);
+
+            var result = _mapper.Map<CardViewModel>(card);
+
             if(result is null)
             {
                 Response.StatusCode = 404;
@@ -61,8 +75,10 @@ namespace DapperTest.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] CardParameter parameter)
         {
-            var result = _cardRepository.Create(parameter);
-            if (result > 0)
+            var info = _mapper.Map<CardInfo>(parameter);
+
+            var isInsertSuccess = _cardService.Insert(info);
+            if (isInsertSuccess)
                 return Ok();
 
             return StatusCode(500);
@@ -79,13 +95,15 @@ namespace DapperTest.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] CardParameter parameter)
         {
-            Card targetCard = _cardRepository.Get(id);
+            var targetCard = _cardService.Get(id);
             if(targetCard is null)
             {
                 return NotFound();
             }
 
-            var isUpdateSuccess = _cardRepository.Update(id, parameter);
+            var info = _mapper.Map<CardInfo>(parameter);
+
+            var isUpdateSuccess = _cardService.Update(id, info);
             if(isUpdateSuccess)
             { 
                 return Ok();
@@ -104,7 +122,7 @@ namespace DapperTest.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            _cardRepository.Delect(id);
+            _cardService.Delete(id);
             return Ok();
         }
 

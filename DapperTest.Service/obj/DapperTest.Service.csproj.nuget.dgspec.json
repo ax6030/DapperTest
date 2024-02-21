@@ -1,0 +1,200 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Service\\DapperTest.Service.csproj": {}
+  },
+  "projects": {
+    "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Common\\DapperTest.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Common\\DapperTest.Common.csproj",
+        "projectName": "DapperTest.Common",
+        "projectPath": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Common\\DapperTest.Common.csproj",
+        "packagesPath": "C:\\Users\\Jason\\.nuget\\packages\\",
+        "outputPath": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Repository\\DapperTest.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Repository\\DapperTest.Repository.csproj",
+        "projectName": "DapperTest.Repository",
+        "projectPath": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Repository\\DapperTest.Repository.csproj",
+        "packagesPath": "C:\\Users\\Jason\\.nuget\\packages\\",
+        "outputPath": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Common\\DapperTest.Common.csproj": {
+                "projectPath": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Common\\DapperTest.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.28, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Service\\DapperTest.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Service\\DapperTest.Service.csproj",
+        "projectName": "DapperTest.Service",
+        "projectPath": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Service\\DapperTest.Service.csproj",
+        "packagesPath": "C:\\Users\\Jason\\.nuget\\packages\\",
+        "outputPath": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Common\\DapperTest.Common.csproj": {
+                "projectPath": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Common\\DapperTest.Common.csproj"
+              },
+              "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Repository\\DapperTest.Repository.csproj": {
+                "projectPath": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Repository\\DapperTest.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

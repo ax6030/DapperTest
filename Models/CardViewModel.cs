@@ -2,7 +2,7 @@
 
 namespace DapperTest.Models
 {
-    public class Card
+    public class CardViewModel
     {
         /// <summary>
         /// 卡片編號

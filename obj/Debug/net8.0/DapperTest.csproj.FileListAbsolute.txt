@@ -40,3 +40,10 @@ C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\obj\Debug\net8.0\ref\Da
 C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\obj\Debug\net8.0\DapperTest.sourcelink.json
 C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\DapperTest.xml
 C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\obj\Debug\net8.0\DapperTest.xml
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\AutoMapper.dll
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\DapperTest.Repository.dll
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\DapperTest.Service.dll
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\DapperTest.Service.pdb
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\DapperTest.Repository.pdb
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\DapperTest.Common.dll
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\DapperTest.Common.pdb

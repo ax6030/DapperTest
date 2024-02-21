@@ -1,4 +1,7 @@
-using DapperTest.Repository;
+using AutoMapper;
+using DapperTest.Repository.Implement;
+using DapperTest.Service.Implement;
+using DapperTest.Service.Interface;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 
@@ -35,8 +38,11 @@ builder.Services.AddSwaggerGen(c =>
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     c.IncludeXmlComments(xmlPath);
 });
+
+builder.Services.AddScoped<CardService>();
 builder.Services.AddScoped<CardRepository>();
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 

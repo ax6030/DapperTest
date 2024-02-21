@@ -10,14 +10,14 @@ namespace DapperTest.Repository
 
 
         // 查詢卡片列表
-        public IEnumerable<Card> GetList()
+        public IEnumerable<CardViewModel> GetList()
         {
             using(var conn = new SqlConnection(_connectString))
-                return conn.Query<Card>("SELECT * FROM Card");
+                return conn.Query<CardViewModel>("SELECT * FROM Card");
         }
 
         /// 查詢卡片
-        public Card Get(int id)
+        public CardViewModel Get(int id)
         {
             var sql =
                     @"
@@ -31,7 +31,7 @@ namespace DapperTest.Repository
 
             using (var conn = new SqlConnection(_connectString))
             { 
-                var result = conn.QueryFirstOrDefault<Card>(sql, parameters);
+                var result = conn.QueryFirstOrDefault<CardViewModel>(sql, parameters);
                 return result;
             }
         }

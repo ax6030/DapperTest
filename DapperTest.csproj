@@ -8,9 +8,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DapperTest.Common\**" />
+    <Compile Remove="DapperTest.Repository\**" />
+    <Compile Remove="DapperTest.Service\**" />
+    <Compile Remove="Repository\**" />
+    <Content Remove="DapperTest.Common\**" />
+    <Content Remove="DapperTest.Repository\**" />
+    <Content Remove="DapperTest.Service\**" />
+    <Content Remove="Repository\**" />
+    <EmbeddedResource Remove="DapperTest.Common\**" />
+    <EmbeddedResource Remove="DapperTest.Repository\**" />
+    <EmbeddedResource Remove="DapperTest.Service\**" />
+    <EmbeddedResource Remove="Repository\**" />
+    <None Remove="DapperTest.Common\**" />
+    <None Remove="DapperTest.Repository\**" />
+    <None Remove="DapperTest.Service\**" />
+    <None Remove="Repository\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.28" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="DapperTest.Common\DapperTest.Common.csproj" />
+    <ProjectReference Include="DapperTest.Service\DapperTest.Service.csproj" />
   </ItemGroup>
 
 </Project>

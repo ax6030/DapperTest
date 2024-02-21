@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DapperTest.Service</id>
+    <version>1.0.0</version>
+    <authors>DapperTest.Service</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="bfebbb9192a6790b9f285c866e76318edf4b9346" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="DapperTest.Common" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="DapperTest.Repository" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\DapperTest.Service\bin\Debug\net8.0\DapperTest.Service.dll" target="lib\net8.0\DapperTest.Service.dll" />
+  </files>
+</package>
