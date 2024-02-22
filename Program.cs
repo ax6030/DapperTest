@@ -1,9 +1,12 @@
 using AutoMapper;
 using DapperTest.Repository.Implement;
+using DapperTest.Repository.Interface;
 using DapperTest.Service.Implement;
 using DapperTest.Service.Interface;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using System.Reflection.Metadata.Ecma335;
 
 var builder = WebApplication.CreateBuilder(args);
 

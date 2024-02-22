@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "4TcpbL/u1jtoSQDqu9ekoothV2NaXXif3kchOTU1zMpFPAsEPB60hG/c6NnsuUXoaRo3qpc0SDKcU+q7cVkAJA==",
+  "dgSpecHash": "YbajTrMMKboBidhu7UUvCjYHqwR4uZ79q3ddAX453MNub7GRWdm1LJCduqwRXQPxkfyAR2+viUPlmhUzkWbm/A==",
   "success": true,
   "projectFilePath": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.Repository\\DapperTest.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jason\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
+    "C:\\Users\\Jason\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\Jason\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Jason\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Jason\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Jason\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Jason\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",

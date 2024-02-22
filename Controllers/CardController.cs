@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DapperTest.Models;
 using DapperTest.Parameter;
+using DapperTest.Repository.Implement;
 using DapperTest.Service.Dtos;
 using DapperTest.Service.Implement;
 using DapperTest.Service.Interface;

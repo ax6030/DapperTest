@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DapperTest.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfebbb9192a6790b9f285c866e76318edf4b9346")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5baae5a7e71d0647194cb735a2641a8ec748bad9")]
 [assembly: System.Reflection.AssemblyProductAttribute("DapperTest.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DapperTest.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

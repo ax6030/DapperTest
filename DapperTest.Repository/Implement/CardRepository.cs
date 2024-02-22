@@ -8,12 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Dapper;
+using System.Net.Http.Headers;
+using Microsoft.Extensions.Configuration;
 
 namespace DapperTest.Repository.Implement
 {
     public class CardRepository : ICardRepository
     {
-        private readonly string  _connectString = @"Server=(LocalDB)\MSSQLLocalDB;Database=Newbie;Trusted_Connection=True;";
+        private readonly string _connectString;
+        public CardRepository(IConfiguration configuration) 
+        {
+            _connectString = configuration.GetConnectionString("DataBase");
+        }
 
         /// <summary>
         /// 查詢卡片列表
