@@ -1,12 +1,11 @@
-using AutoMapper;
+using DapperTest.Models;
 using DapperTest.Repository.Implement;
-using DapperTest.Repository.Interface;
 using DapperTest.Service.Implement;
-using DapperTest.Service.Interface;
-using Microsoft.Extensions.DependencyInjection;
+using DapperTest.Validators;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
-using System.Reflection.Metadata.Ecma335;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +45,9 @@ builder.Services.AddScoped<CardService>();
 builder.Services.AddScoped<CardRepository>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddFluentValidation();
+builder.Services.AddTransient<IValidator<CardParameter>, CardParameterValidator>();
 
 var app = builder.Build();
 

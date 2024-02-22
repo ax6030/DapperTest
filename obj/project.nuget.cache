@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "34wV0oRwZnlMGs3bcDlRKEFlcBtYHZdvhH37dpNVwPkeoZmk9NbBXTTZLvhxzhnN5h4DOKa+xZ8aP9EMO8z5vw==",
+  "dgSpecHash": "Emy2gcfUFhX1z/6xQj2ZKhD0/ivy7YHxX9wp+y5avTPv9u76NGxxVNyYHnM0q16xzmk4CgMLZ2R8qY7gOlk/vA==",
   "success": true,
   "projectFilePath": "C:\\JasonH\\VisaulStudioProgram\\practice\\WebAPI\\DapperTest\\DapperTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jason\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Jason\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
+    "C:\\Users\\Jason\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\Jason\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Jason\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Jason\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Jason\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Jason\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

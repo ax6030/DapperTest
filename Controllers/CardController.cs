@@ -5,6 +5,7 @@ using DapperTest.Repository.Implement;
 using DapperTest.Service.Dtos;
 using DapperTest.Service.Implement;
 using DapperTest.Service.Interface;
+using DapperTest.Validators;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -76,8 +77,21 @@ namespace DapperTest.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] CardParameter parameter)
         {
+            // 這邊需要對參數做檢查   有內建注入，可以直接進行檢查
+            //var validator = new CardParameterValidator();
+            //var validationResult = validator.Validate(parameter);
+
+            //if(validationResult.IsValid is false)
+            //{
+            //    var errorMessages = validationResult.Errors.Select(e => e.ErrorMessage);
+            //    var resultMessages = string.Join(",", errorMessages);
+            //    return BadRequest(resultMessages);  // 直接回傳 400 + 錯誤訊息
+            //}
+
+            // 用 AutoMapper 把 Parameter Model 轉換成 Info Model
             var info = _mapper.Map<CardInfo>(parameter);
 
+            // 呼叫依賴的 Service 層寫入資料
             var isInsertSuccess = _cardService.Insert(info);
             if (isInsertSuccess)
                 return Ok();

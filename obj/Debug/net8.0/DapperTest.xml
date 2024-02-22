@@ -132,5 +132,10 @@
             花費值上限
             </summary>
         </member>
+        <member name="M:DapperTest.Validators.CardParameterValidator.#ctor">
+            <summary>
+            驗證器的建構式: 在這裡註冊我們要驗證的規則
+            </summary>
+        </member>
     </members>
 </doc>

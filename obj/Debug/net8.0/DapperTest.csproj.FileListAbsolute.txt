@@ -47,3 +47,6 @@ C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\Dapper
 C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\DapperTest.Repository.pdb
 C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\DapperTest.Common.dll
 C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\DapperTest.Common.pdb
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\FluentValidation.dll
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\JasonH\VisaulStudioProgram\practice\WebAPI\DapperTest\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
